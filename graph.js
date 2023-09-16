@@ -10,7 +10,7 @@ class Graph {
     this.nodes = new Set();
   }
 
-  // this function accepts a Node instance and adds it to the nodes property on the graph
+  //This function accepts a Node instance and adds it to the node property on the graph
   /**This function should add a node to the graph.
 
 let graph = new Graph()
@@ -27,14 +27,14 @@ graph.nodes.has(c) // true */
     this.node.add(vertex);
   }
 
-  // this function accepts an array of Node instances and adds them to the nodes property on the graph
+  //This function accepts an array of Node instances and adds them to the nodes property on the graph
   addVertices(vertexArray) {
     for (let vertex of vertexArray){
       this.addVertex(vertex)
     }
   }
 
-  // this function accepts two vertices and updates their adjacent values to include the other vertex
+  //This function accepts two vertices and updates their adjacent values to include the other vertex
   /**This function should add an edge between two nodes in the graph and place each value of the nodes in each array for the value of the node in the adjacency list.
 
 let graph = new Graph()
@@ -57,10 +57,10 @@ d.adjacent // contains b and c */
     v2.adjacent.add(v1);
   }
 
-  // this function accepts two vertices and updates their adjacent values to remove the other vertex
+  //This function accepts two vertices and updates their adjacent values to remove the other vertex
   /**This function should accept two nodes and remove the edge between them. 
    * It should modify the adjacency list to ensure that both values are not in each array for the two nodes 
-   * which no longer contain the edge.
+   * which no longer contains the edge.
 
 let graph = new Graph()
 let a = new Node("A")
@@ -88,7 +88,7 @@ d.adjacent // does not contain c
     v2.adjacent.delete(v1);
   }
 
-  // this function accepts a vertex and removes it from the nodes property, it also updates any adjacency lists 
+  //This function accepts a vertex and removes it from the nodes property, it also updates any adjacency lists 
   //that include that vertex
   /**This function should remove the node in the array of nodes and also remove all edges that the removed node
    *previously contained.
@@ -121,7 +121,7 @@ graph.nodes.has(d) // false
     this.nodes.delete(vertex);
   }
 
-  // this function returns an array of Node values using DFS
+  //This function returns an array of Node values using DFS
   /**This function should return an array of nodes visited using DFS. You can do this iteratively (using a stack)
    * or recursively, but note the order of the results will be different. Try to solve this without consulting 
    * the lecture notes!
@@ -215,7 +215,7 @@ graph.depthFirstSearch(S) // ["S", "P", "U", "X", "Q", "V", "Y", "R", "W", "T"]
     return result;
   }
 
-  // this function returns an array of Node values using BFS
+  //This function returns an array of Node values using BFS
   /**This function should return an array of vertices visited using BFS.
 
 let graph = new Graph()
