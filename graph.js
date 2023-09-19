@@ -266,12 +266,12 @@ graph.depthFirstSearch(S) // ["S", "U", "V", "W", "T", "R", "Q", "Y", "X", "P"] 
     //visit node
     visited.add(start);
 
-    //while there are still neigbors to visit
+    //while there are still neighbors to visit
     while(queue.length){
       currentVertex = queue.shift();
       result.push(currentVertex.value);
 
-      //visit neigbors and push onto stack
+      //visit neighbors and push onto the stack
       currentVertex.adjacent.forEach(neighbor => {
         if(!visited.has(neighbor)){
           visited.add(neighbor);
